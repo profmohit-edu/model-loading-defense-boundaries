@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - ".github/workflows/verify-evidence.yml"
-      - "Model_Loading_Supplement_Anonymous.zip"
+      - "Model_Loading_Supplement_Anonymous-2.zip"
   workflow_dispatch:
 
 permissions:
@@ -20,9 +20,9 @@ jobs:
           python - <<'PY'
           from pathlib import Path, PurePosixPath
           import zipfile, hashlib, json
-          archive = Path("Model_Loading_Supplement_Anonymous.zip")
+          archive = Path("Model_Loading_Supplement_Anonymous-2.zip")
           if not archive.exists():
-              raise SystemExit("Upload Model_Loading_Supplement_Anonymous.zip to repository root; full verification cannot run yet.")
+              raise SystemExit("Upload Model_Loading_Supplement_Anonymous-2.zip to repository root; full verification cannot run yet.")
           with zipfile.ZipFile(archive) as z:
               assert z.testzip() is None, "Corrupt ZIP entry"
               names = z.namelist()
