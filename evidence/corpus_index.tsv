@@ -1,0 +1,25 @@
+id	title	kind	publication
+R01	PickleBall: Secure Deserialization of Pickle-based Machine Learning Models	published research	ACM CCS (2025)
+R02	On the (In)Security of Loading Machine Learning Models	published research	IEEE Symposium on Security and Privacy (2026)
+R03	The Art of Hide and Seek: Making Pickle-Based Model Supply Chain Poisoning Stealthy Again	published research	USENIX Security (2026)
+R04	PickleFuzzer: A Case Study in Fuzzing for Discrepancies Between Python Pickle Implementations	published research	IEEE Security and Privacy Workshops / LangSec (2026)
+R05	A Study on the Security Risks of Model Sharing in Federated Learning Systems	published research	BIOSTEC BIOSIGNALS (2026)
+R07	My Model is Malware to You: Transforming AI Models into Malware by Abusing TensorFlow APIs	published research	IEEE Symposium on Security and Privacy (2025)
+R08	EleutherAI, Hugging Face Safetensors Library Security Assessment	public security audit	Trail of Bits (2023)
+D01	pickle -- Python object serialization	official technical documentation	Python 3.12
+D02	Serialization semantics	official technical documentation	PyTorch 2.6
+D03	Security policy	official technical documentation	PyTorch v2.6.0
+D04	Whole model saving and loading	official technical documentation	Keras API
+D05	TensorFlow security policy	official technical documentation	Official repository snapshot
+D06	Safetensors format and implementation overview	official technical documentation	Official README snapshot
+D07	External Data	official technical documentation	Official specification snapshot
+D08	GGUF file format specification	official technical documentation	Official specification snapshot
+D09	Model persistence	official technical documentation	Official documentation snapshot
+D10	Persistence	official technical documentation	Official documentation snapshot
+D11	numpy.load	official technical documentation	NumPy 2.3
+D12	Pickle scanning	official technical documentation	Official Hub documentation snapshot
+D13	Security policy	official technical documentation	Official repository snapshot
+D14	Model serialization attacks	official technical documentation	Official project technical documentation snapshot
+D15	Picklescan documentation	official technical documentation	Official README snapshot
+D16	Fickling documentation	official technical documentation	Official README snapshot
+D17	Relishing new Fickling features for securing ML systems	official technical documentation	Trail of Bits (2024)
