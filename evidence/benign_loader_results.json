@@ -1,0 +1,134 @@
+{
+  "provenance": "Local benign policy probes, not an exploit test, scanner benchmark, or proof of loader security.",
+  "python": "3.12.15",
+  "numpy": "2.3.5",
+  "platform": "linux",
+  "cases": [
+    {
+      "case_id": "C01",
+      "format": "npy",
+      "array_kind": "numeric",
+      "policy": "default",
+      "open_returned": true,
+      "array_access_succeeded": true,
+      "failure_stage": null,
+      "exception": null
+    },
+    {
+      "case_id": "C02",
+      "format": "npy",
+      "array_kind": "numeric",
+      "policy": "false",
+      "open_returned": true,
+      "array_access_succeeded": true,
+      "failure_stage": null,
+      "exception": null
+    },
+    {
+      "case_id": "C03",
+      "format": "npy",
+      "array_kind": "numeric",
+      "policy": "true",
+      "open_returned": true,
+      "array_access_succeeded": true,
+      "failure_stage": null,
+      "exception": null
+    },
+    {
+      "case_id": "C04",
+      "format": "npy",
+      "array_kind": "object",
+      "policy": "default",
+      "open_returned": false,
+      "array_access_succeeded": false,
+      "failure_stage": "load call",
+      "exception": "ValueError"
+    },
+    {
+      "case_id": "C05",
+      "format": "npy",
+      "array_kind": "object",
+      "policy": "false",
+      "open_returned": false,
+      "array_access_succeeded": false,
+      "failure_stage": "load call",
+      "exception": "ValueError"
+    },
+    {
+      "case_id": "C06",
+      "format": "npy",
+      "array_kind": "object",
+      "policy": "true",
+      "open_returned": true,
+      "array_access_succeeded": true,
+      "failure_stage": null,
+      "exception": null
+    },
+    {
+      "case_id": "C07",
+      "format": "npz",
+      "array_kind": "numeric",
+      "policy": "default",
+      "open_returned": true,
+      "array_access_succeeded": true,
+      "failure_stage": null,
+      "exception": null
+    },
+    {
+      "case_id": "C08",
+      "format": "npz",
+      "array_kind": "numeric",
+      "policy": "false",
+      "open_returned": true,
+      "array_access_succeeded": true,
+      "failure_stage": null,
+      "exception": null
+    },
+    {
+      "case_id": "C09",
+      "format": "npz",
+      "array_kind": "numeric",
+      "policy": "true",
+      "open_returned": true,
+      "array_access_succeeded": true,
+      "failure_stage": null,
+      "exception": null
+    },
+    {
+      "case_id": "C10",
+      "format": "npz",
+      "array_kind": "object",
+      "policy": "default",
+      "open_returned": true,
+      "array_access_succeeded": false,
+      "failure_stage": "array access",
+      "exception": "ValueError"
+    },
+    {
+      "case_id": "C11",
+      "format": "npz",
+      "array_kind": "object",
+      "policy": "false",
+      "open_returned": true,
+      "array_access_succeeded": false,
+      "failure_stage": "array access",
+      "exception": "ValueError"
+    },
+    {
+      "case_id": "C12",
+      "format": "npz",
+      "array_kind": "object",
+      "policy": "true",
+      "open_returned": true,
+      "array_access_succeeded": true,
+      "failure_stage": null,
+      "exception": null
+    }
+  ],
+  "summary": {
+    "cases": 12,
+    "accessible": 8,
+    "blocked_at_load": 2,
+    "blocked_at_access": 2
+  }
+}

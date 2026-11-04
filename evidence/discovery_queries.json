@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-04",
+  "search_type": "web discovery, not a systematic bibliographic database search",
+  "queries": [
+    "survey model serialization security pickle safetensors ONNX GGUF 2026",
+    "\"model file\" \"security\" \"safetensors\" paper",
+    "\"safetensors\" \"ONNX\" \"survey\"",
+    "\"model serialization\" \"security\" \"review\"",
+    "\"machine learning\" \"serialization\" \"survey\" security pickle 2026",
+    "\"model loading\" \"security\" \"survey\" 2026",
+    "\"pickle\" \"model\" \"CCS\" 2025 security",
+    "\"model deserialization\" \"SoK\"",
+    "\"PickleFuzzer\" \"arxiv\" authors",
+    "\"model\" \"serialization\" \"Fickling\" paper",
+    "\"model\" \"pickle\" \"security\" \"USENIX\" 2026",
+    "\"malicious model\" \"serialization\" paper 2025",
+    "\"Model is Malware to You\" paper",
+    "\"An Empirical Study of Safetensors\" published",
+    "\"PickleFuzzer\" workshop 2026",
+    "\"model serialization\" \"security\" \"NDSS\"",
+    "\"My Model is Malware\" pdf Ruofan",
+    "\"An Empirical Study of Safetensors\" \"2025\" authors DOI",
+    "\"model serialization\" \"Fickling\" Trail of Bits 2021",
+    "\"PickleFuzzer\" \"10.1109\"",
+    "\"A Study on the Security Risks of Model Sharing\" \"10.5220\"",
+    "\"PickleFuzzer\" \"SPW72489\"",
+    "\"safe model loading\" \"review\" \"pickle\"",
+    "\"machine learning model\" \"loading\" \"critical review\""
+  ],
+  "note": "Only model-loading discovery is recorded here; earlier abandoned-topic exploration and venue searches do not enter this corpus. No hit totals or PRISMA screening counts were retained or invented."
+}

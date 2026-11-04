@@ -1,0 +1,218 @@
+[
+  {
+    "ref": 1,
+    "id": "R01",
+    "authors": "Kellas AD, Christou N, Jiang W, Li P, Simon L, David Y, Kemerlis VP, Davis JC, Yang J",
+    "title": "PickleBall: Secure Deserialization of Pickle-based Machine Learning Models",
+    "publication": "ACM CCS (2025)",
+    "url": "https://doi.org/10.1145/3719027.3765037",
+    "kind": "published research"
+  },
+  {
+    "ref": 2,
+    "id": "R02",
+    "authors": "Digregorio G, Di Gennaro M, Zanero S, Longari S, Carminati M",
+    "title": "On the (In)Security of Loading Machine Learning Models",
+    "publication": "IEEE Symposium on Security and Privacy (2026)",
+    "url": "https://doi.org/10.1109/SP63933.2026.00123",
+    "kind": "published research"
+  },
+  {
+    "ref": 3,
+    "id": "R03",
+    "authors": "Liu T, Meng G, Zhou P, Deng Z, Yao S, Chen K",
+    "title": "The Art of Hide and Seek: Making Pickle-Based Model Supply Chain Poisoning Stealthy Again",
+    "publication": "USENIX Security, pp. 161-180 (2026)",
+    "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/liu-tong",
+    "kind": "published research"
+  },
+  {
+    "ref": 4,
+    "id": "R04",
+    "authors": "Applegate J, Kellas A",
+    "title": "PickleFuzzer: A Case Study in Fuzzing for Discrepancies Between Python Pickle Implementations",
+    "publication": "IEEE Security and Privacy Workshops / LangSec (2026)",
+    "url": "https://doi.org/10.1109/SPW72489.2026.00010",
+    "kind": "published research"
+  },
+  {
+    "ref": 5,
+    "id": "R05",
+    "authors": "Pastore F, Di Gennaro M, Zanero S, Carminati M",
+    "title": "A Study on the Security Risks of Model Sharing in Federated Learning Systems",
+    "publication": "BIOSTEC, vol. 1 BIOSIGNALS, pp. 829-837 (2026)",
+    "url": "https://doi.org/10.5220/0014707500004070",
+    "kind": "published research"
+  },
+  {
+    "ref": 6,
+    "id": "R07",
+    "authors": "Zhu R, Chen G, Shen W, Xie X, Chang R",
+    "title": "My Model is Malware to You: Transforming AI Models into Malware by Abusing TensorFlow APIs",
+    "publication": "IEEE Symposium on Security and Privacy, pp. 486-503 (2025)",
+    "url": "https://doi.org/10.1109/SP61157.2025.00012",
+    "kind": "published research"
+  },
+  {
+    "ref": 7,
+    "id": "R08",
+    "authors": "Dahlgren F, Hussain S, Khlaaf H, Sultanik E",
+    "title": "EleutherAI, Hugging Face Safetensors Library Security Assessment",
+    "publication": "Trail of Bits, public security assessment, 3 May 2023",
+    "url": "https://raw.githubusercontent.com/trailofbits/publications/master/reviews/2023-03-eleutherai-huggingface-safetensors-securityreview.pdf",
+    "kind": "public security audit"
+  },
+  {
+    "ref": 8,
+    "id": "D01",
+    "authors": "Python Software Foundation",
+    "title": "pickle -- Python object serialization",
+    "publication": "Python 3.12 documentation",
+    "url": "https://docs.python.org/3.12/library/pickle.html",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 9,
+    "id": "D02",
+    "authors": "PyTorch contributors",
+    "title": "Serialization semantics",
+    "publication": "PyTorch 2.6 documentation",
+    "url": "https://docs.pytorch.org/docs/2.6/notes/serialization.html",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 10,
+    "id": "D03",
+    "authors": "PyTorch contributors",
+    "title": "Security policy",
+    "publication": "PyTorch v2.6.0 SECURITY.md",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.6.0/SECURITY.md",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 11,
+    "id": "D04",
+    "authors": "Keras contributors",
+    "title": "Whole model saving and loading",
+    "publication": "Keras API documentation snapshot",
+    "url": "https://keras.io/api/models/model_saving_apis/model_saving_and_loading/",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 12,
+    "id": "D05",
+    "authors": "TensorFlow contributors",
+    "title": "TensorFlow security policy",
+    "publication": "Official repository snapshot",
+    "url": "https://raw.githubusercontent.com/tensorflow/tensorflow/master/SECURITY.md",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 13,
+    "id": "D06",
+    "authors": "Hugging Face contributors",
+    "title": "Safetensors format and implementation overview",
+    "publication": "Official README snapshot",
+    "url": "https://raw.githubusercontent.com/huggingface/safetensors/main/README.md",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 14,
+    "id": "D07",
+    "authors": "ONNX contributors",
+    "title": "External Data",
+    "publication": "Official specification documentation snapshot",
+    "url": "https://raw.githubusercontent.com/onnx/onnx/main/docs/ExternalData.md",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 15,
+    "id": "D08",
+    "authors": "ggml contributors",
+    "title": "GGUF file format specification",
+    "publication": "Official specification snapshot",
+    "url": "https://raw.githubusercontent.com/ggml-org/ggml/master/docs/gguf.md",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 16,
+    "id": "D09",
+    "authors": "scikit-learn contributors",
+    "title": "Model persistence",
+    "publication": "Official documentation snapshot",
+    "url": "https://scikit-learn.org/stable/model_persistence.html",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 17,
+    "id": "D10",
+    "authors": "skops contributors",
+    "title": "Persistence",
+    "publication": "Official documentation snapshot",
+    "url": "https://skops.readthedocs.io/en/stable/persistence.html",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 18,
+    "id": "D11",
+    "authors": "NumPy contributors",
+    "title": "numpy.load",
+    "publication": "NumPy 2.3 documentation",
+    "url": "https://numpy.org/doc/2.3/reference/generated/numpy.load.html",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 19,
+    "id": "D12",
+    "authors": "Hugging Face contributors",
+    "title": "Pickle scanning",
+    "publication": "Official Hub documentation snapshot",
+    "url": "https://raw.githubusercontent.com/huggingface/hub-docs/main/docs/hub/security-pickle.md",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 20,
+    "id": "D13",
+    "authors": "Hugging Face Transformers contributors",
+    "title": "Security policy",
+    "publication": "Official repository snapshot",
+    "url": "https://raw.githubusercontent.com/huggingface/transformers/main/SECURITY.md",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 21,
+    "id": "D14",
+    "authors": "ModelScan contributors",
+    "title": "Model serialization attacks",
+    "publication": "Official project technical documentation snapshot",
+    "url": "https://raw.githubusercontent.com/protectai/modelscan/main/docs/model_serialization_attacks.md",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 22,
+    "id": "D15",
+    "authors": "Picklescan contributors",
+    "title": "Picklescan documentation",
+    "publication": "Official README snapshot",
+    "url": "https://raw.githubusercontent.com/mmaitre314/picklescan/main/README.md",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 23,
+    "id": "D16",
+    "authors": "Trail of Bits contributors",
+    "title": "Fickling documentation",
+    "publication": "Official README snapshot",
+    "url": "https://raw.githubusercontent.com/trailofbits/fickling/master/README.md",
+    "kind": "official technical documentation"
+  },
+  {
+    "ref": 24,
+    "id": "D17",
+    "authors": "Hussain SS",
+    "title": "Relishing new Fickling features for securing ML systems",
+    "publication": "Trail of Bits, 4 March 2024",
+    "url": "https://blog.trailofbits.com/2024/03/04/relishing-new-fickling-features-for-securing-ml-systems/",
+    "kind": "official technical documentation"
+  }
+]

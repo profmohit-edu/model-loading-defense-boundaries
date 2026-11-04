@@ -1,0 +1,523 @@
+[
+  {
+    "doi": "10.1145/3719027.3765037",
+    "title": [
+      "P\n                    <scp>ickle</scp>\n                    B\n                    <scp>all</scp>\n                    : Secure Deserialization of Pickle-based Machine Learning Models"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0001-8763-2400",
+        "authenticated-orcid": false,
+        "given": "Andreas D.",
+        "family": "Kellas",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Columbia University, New York, NY, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7335-9485",
+        "authenticated-orcid": false,
+        "given": "Neophytos",
+        "family": "Christou",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Brown University, Providence, RI, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2608-8576",
+        "authenticated-orcid": false,
+        "given": "Wenxin",
+        "family": "Jiang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Purdue University, West Lafayette, IN, USA and Socket, Wilmington, DE, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3077-5697",
+        "authenticated-orcid": false,
+        "given": "Penghui",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Columbia University, New York, NY, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7893-547X",
+        "authenticated-orcid": false,
+        "given": "Laurent",
+        "family": "Simon",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Google, Mountain View, CA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1630-7723",
+        "authenticated-orcid": false,
+        "given": "Yaniv",
+        "family": "David",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Technion, Haifa, Israel"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6528-437X",
+        "authenticated-orcid": false,
+        "given": "Vasileios P.",
+        "family": "Kemerlis",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Brown University, Providence, RI, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2495-686X",
+        "authenticated-orcid": false,
+        "given": "James C.",
+        "family": "Davis",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Purdue University, West Lafayette, IN, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0000-2277-6545",
+        "authenticated-orcid": false,
+        "given": "Junfeng",
+        "family": "Yang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Columbia University, New York, NY, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          19
+        ]
+      ]
+    },
+    "container": [
+      "Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security"
+    ],
+    "status": "verified"
+  },
+  {
+    "doi": "10.1109/SP63933.2026.00123",
+    "title": [
+      "On the (In)Security of Loading Machine Learning Models"
+    ],
+    "author": [
+      {
+        "given": "Gabriele",
+        "family": "Digregorio",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Politecnico di Milano,Milan,Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marco",
+        "family": "Di Gennaro",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Politecnico di Milano,Milan,Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stefano",
+        "family": "Zanero",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Politecnico di Milano,Milan,Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stefano",
+        "family": "Longari",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Politecnico di Milano,Milan,Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michele",
+        "family": "Carminati",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Politecnico di Milano,Milan,Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          18
+        ]
+      ]
+    },
+    "container": [
+      "2026 IEEE Symposium on Security and Privacy (SP)"
+    ],
+    "status": "verified"
+  },
+  {
+    "doi": "10.1109/SPW72489.2026.00010",
+    "title": [
+      "PickleFuzzer: A Case Study in Fuzzing for Discrepancies Between Python Pickle Implementations"
+    ],
+    "author": [
+      {
+        "given": "Justin",
+        "family": "Applegate",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Brigham Young University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andreas",
+        "family": "Kellas",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Columbia University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          21
+        ]
+      ]
+    },
+    "container": [
+      "2026 IEEE Symposium on Security and Privacy Workshops (SPW)"
+    ],
+    "status": "verified"
+  },
+  {
+    "doi": "10.5220/0014707500004070",
+    "title": [
+      "A Study on the Security Risks of Model Sharing in Federated Learning Systems"
+    ],
+    "author": [
+      {
+        "given": "Francesco",
+        "family": "Pastore",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Electronics, Information and Bioengineering (DEIB), Politecnico di Milano, Milan, Italy"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Marco",
+        "family": "Di Gennaro",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electronics, Information and Bioengineering (DEIB), Politecnico di Milano, Milan, Italy"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Stefano",
+        "family": "Zanero",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electronics, Information and Bioengineering (DEIB), Politecnico di Milano, Milan, Italy"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Michele",
+        "family": "Carminati",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electronics, Information and Bioengineering (DEIB), Politecnico di Milano, Milan, Italy"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "container": [
+      "Proceedings of the 19th International Joint Conference on Biomedical Engineering Systems and Technologies"
+    ],
+    "status": "verified"
+  },
+  {
+    "doi": "10.1109/SP61157.2025.00012",
+    "title": [
+      "My Model is Malware to You: Transforming AI Models into Malware by Abusing TensorFlow APIs"
+    ],
+    "author": [
+      {
+        "given": "Ruofan",
+        "family": "Zhu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Zhejiang University,Hangzhou,China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ganhao",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Zhejiang University,Hangzhou,China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wenbo",
+        "family": "Shen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Zhejiang University,Hangzhou,China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xiaofei",
+        "family": "Xie",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Singapore Management University,Singapore"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rui",
+        "family": "Chang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Zhejiang University,Hangzhou,China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          5,
+          12
+        ]
+      ]
+    },
+    "container": [
+      "2025 IEEE Symposium on Security and Privacy (SP)"
+    ],
+    "status": "verified"
+  }
+]

@@ -1,0 +1,191 @@
+[
+  {
+    "marker": "TABLE1",
+    "caption": "Research and audit evidence. Findings are reported by the sources and have not been independently reproduced in this review.",
+    "headers": [
+      "Source",
+      "Protected object or mechanism",
+      "Boundary retained in this review"
+    ],
+    "rows": [
+      [
+        "Kellas AD et al. [1]",
+        "Generates and enforces library-specific policies for pickle reconstruction.",
+        "Does not establish absence of weight backdoors or denial of service; benign compatibility is separately assessed."
+      ],
+      [
+        "Digregorio G et al. [2]",
+        "Analyzes frameworks, hubs, security-oriented loading mechanisms and user perceptions.",
+        "Reported weaknesses concern inspected versions; a secure-looking format or API name is not an end-to-end assurance claim."
+      ],
+      [
+        "Liu T et al. [3]",
+        "Maps loading paths, exception-directed bypasses and callable gadgets.",
+        "Demonstrates studied blind spots rather than a permanent claim about every current scanner release."
+      ],
+      [
+        "Applegate J et al. [4]",
+        "Uses differential fuzzing to find discrepancies between pickle implementations.",
+        "Parser agreement is distinct from an adequate policy over allowed operations."
+      ],
+      [
+        "Pastore F et al. [5]",
+        "Places model exchange inside the federated-learning trust boundary.",
+        "Keeping training records local does not by itself constrain artifact reconstruction or model execution."
+      ],
+      [
+        "Zhu R et al. [6]",
+        "Studies persistent TensorFlow APIs and model-embedded operational capabilities.",
+        "Avoiding pickle does not remove effects available through graph operations; results are framework/version specific."
+      ],
+      [
+        "Dahlgren F et al. [7]",
+        "Audits the safetensors implementation and reviews fixes.",
+        "Historical findings must be read with the fix review; they are not evidence that the same issues remain in current releases."
+      ]
+    ]
+  },
+  {
+    "marker": "TABLE2",
+    "caption": "Documented control boundaries. Entries describe specified versions or retrieval snapshots, not a safety ranking or an independent product evaluation.",
+    "headers": [
+      "Route or artifact",
+      "Documented control or property",
+      "Additional scope to assess"
+    ],
+    "rows": [
+      [
+        "Python pickle [8]",
+        "General object reconstruction; documentation warns against untrusted input.",
+        "Reconstruction permissions and trusted source assumptions."
+      ],
+      [
+        "PyTorch weights-only [9,10]",
+        "Restricted reconstruction under documented version/call conditions.",
+        "Allowed-type changes, architecture code and execution environment."
+      ],
+      [
+        "Keras model loading [11]",
+        "safe_mode is documented for unsafe lambda handling and particular format applicability.",
+        "Other reconstruction behavior and the exact installed implementation."
+      ],
+      [
+        "TensorFlow graphs [12]",
+        "Graph representation executed as a program.",
+        "Permitted operations and process capabilities."
+      ],
+      [
+        "Safetensors [7,13]",
+        "Header plus tensor data; constrained representation and validation requirements.",
+        "Parser implementation, model architecture and runtime behavior."
+      ],
+      [
+        "ONNX external data [14]",
+        "Tensor bytes can be referenced outside the primary model file.",
+        "Referenced objects, resolution policy and consuming runtime."
+      ],
+      [
+        "GGUF [15]",
+        "Typed metadata and tensor storage with quantization information.",
+        "Native parsing, consumer implementation and runtime interpretation."
+      ],
+      [
+        "scikit-learn / skops [16,17]",
+        "Persistence selection and review of untrusted object types.",
+        "User approvals, compatible environment and effective type policy."
+      ],
+      [
+        "NumPy arrays [18]",
+        "Object arrays use pickle; documented default disallows it.",
+        "Actual array kind, caller setting and time of materialization."
+      ],
+      [
+        "Hub / remote modeling code [19,20]",
+        "Source identity, artifact scanning and remote-code review.",
+        "Authentic does not imply benign; selected code is separate from tensor bytes."
+      ],
+      [
+        "Static/runtime scanners [21-24]",
+        "Analyzer findings, invocation outcomes and hook scope differ.",
+        "Unsupported input, scan failure, context lifetime and unmediated routes."
+      ]
+    ]
+  },
+  {
+    "marker": "TABLE3",
+    "caption": "Grouped benign NumPy observations. Each row summarizes default, explicit false and explicit true policies; the twelve cases are a fixed design, not a random sample.",
+    "headers": [
+      "Fixture",
+      "Default / explicit false",
+      "Explicit true"
+    ],
+    "rows": [
+      [
+        "Numeric .npy",
+        "Array accessible / accessible",
+        "Array accessible"
+      ],
+      [
+        "Numeric .npz",
+        "Handle returned; array accessible / accessible",
+        "Handle returned; array accessible"
+      ],
+      [
+        "Object .npy",
+        "ValueError at load call / load call",
+        "Array accessible"
+      ],
+      [
+        "Object .npz",
+        "Handle returned; ValueError at array access / array access",
+        "Handle returned; array accessible"
+      ]
+    ]
+  },
+  {
+    "marker": "TABLE4",
+    "caption": "Proposed admission record. This is reporting guidance derived from the synthesis, not an operationally validated standard.",
+    "headers": [
+      "Record item",
+      "Evidence to retain",
+      "Claim it helps delimit"
+    ],
+    "rows": [
+      [
+        "Object identity",
+        "Digests, packaging, selected repository revision and referenced objects.",
+        "The inspected object is the one selected for consumption."
+      ],
+      [
+        "Consumer route",
+        "Framework version, API, arguments, parser/container selection and custom code.",
+        "The analyzed representation matches the consuming path."
+      ],
+      [
+        "Inspection outcome",
+        "Completed, finding, review item, unsupported route or error; wrapper response.",
+        "No detection is distinguished from no successful analysis."
+      ],
+      [
+        "Reconstruction policy",
+        "Allowed types/callables, explicit approvals and changes made for compatibility.",
+        "The consumed policy is the policy that was assessed."
+      ],
+      [
+        "Activation scope",
+        "Entry points and lifetime of runtime checks; later materialization operations.",
+        "Relevant actions are mediated when they actually occur."
+      ],
+      [
+        "Runtime authority",
+        "Accessible files, network, credentials, custom operators and intended model effects.",
+        "Containment is separate from task correctness."
+      ],
+      [
+        "Reassessment trigger",
+        "Changed bytes, code, library version, policy or environment.",
+        "An earlier decision is not silently reused for a different loading configuration."
+      ]
+    ]
+  }
+]
