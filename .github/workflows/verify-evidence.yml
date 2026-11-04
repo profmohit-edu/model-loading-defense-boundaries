@@ -1,0 +1,73 @@
+name: Verify and publish supplementary evidence
+
+on:
+  push:
+    paths:
+      - ".github/workflows/verify-evidence.yml"
+      - "Model_Loading_Supplement_Anonymous.zip"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract and inspect journal supplementary archive
+        run: |
+          python - <<'PY'
+          from pathlib import Path, PurePosixPath
+          import zipfile, hashlib, json
+          archive = Path("Model_Loading_Supplement_Anonymous.zip")
+          if not archive.exists():
+              raise SystemExit("Upload Model_Loading_Supplement_Anonymous.zip to repository root; full verification cannot run yet.")
+          with zipfile.ZipFile(archive) as z:
+              assert z.testzip() is None, "Corrupt ZIP entry"
+              names = z.namelist()
+              required = [
+                  "code/benign_loader_checks.py", "code/verify_supplement.py",
+                  "evidence/source_extraction.json", "evidence/source_extraction.csv",
+                  "evidence/references.json", "evidence/doi_verification.json",
+                  "evidence/tables.json", "evidence/benign_loader_results.json",
+                  "evidence/discovery_queries.json", "evidence/Search_and_Selection.md",
+                  "requirements.txt"
+              ]
+              assert all(n in names for n in required), "Missing required evidence member"
+              for name in names:
+                  p = PurePosixPath(name)
+                  assert not p.is_absolute() and ".." not in p.parts, "Unsafe path"
+                  if name.endswith("/"):
+                      continue
+                  target = Path(name)
+                  assert p.parts[0] in ("code", "evidence") or name in ("README.md", "requirements.txt"), "Unexpected archive path"
+                  if name == "README.md":
+                      continue  # Preserve repository anonymity notice
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(z.read(name))
+          Path("supplement").mkdir(exist_ok=True)
+          Path("supplement/SHA256SUMS").write_text(
+              hashlib.sha256(archive.read_bytes()).hexdigest()+"  "+archive.name+"\n")
+          with open("evidence/source_extraction.json") as f: sources=json.load(f)
+          with open("evidence/references.json") as f: refs=json.load(f)
+          with open("evidence/tables.json") as f: tables=json.load(f)
+          assert len(sources)==len(refs)==24, "24-source inventory mismatch"
+          print("Extracted all journal supplementary evidence; 24-source inventory validated.")
+          PY
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Reproduce 12 benign checks
+        run: |
+          python -m pip install -r requirements.txt
+          python code/verify_supplement.py
+      - name: Commit browsable evidence to public repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add evidence code requirements.txt supplement/SHA256SUMS
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish 24-source ledger and verified benign loading checks"
+            git push
+          fi
